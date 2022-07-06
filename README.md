@@ -1,2 +1,3 @@
-# Expense_Tracker
-Expense Tracker App project
+# Expense Tracker
+Expense Tracker App is a
+PanaCloud Bootcamp Project
