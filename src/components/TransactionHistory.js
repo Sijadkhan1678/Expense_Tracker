@@ -1,6 +1,6 @@
 import react from 'react';
 
-export const TransactionHistory = () =>{
+ const TransactionHistory = () =>{
   
     return(
     <ul>
@@ -13,3 +13,5 @@ export const TransactionHistory = () =>{
   
 
 }
+
+export default TransactionHistory;

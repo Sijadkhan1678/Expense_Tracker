@@ -1,6 +1,6 @@
 import React from "react";
 
-export const AddTransaction = () =>{
+ const AddTransaction = () =>{
     return (
     <div>
         <form >
@@ -18,3 +18,4 @@ export const AddTransaction = () =>{
     </div>
     )
 }
+export default AddTransaction;

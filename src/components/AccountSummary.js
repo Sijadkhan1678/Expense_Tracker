@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const AccountSummary = () => {
+ const AccountSummary = () => {
     
   return(
     <div className='account-summary'>
@@ -16,3 +16,4 @@ export const AccountSummary = () => {
    </div>
    )
 }
+export default AccountSummary
