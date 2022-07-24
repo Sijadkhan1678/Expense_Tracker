@@ -3,15 +3,27 @@
  const TransactionHistory = () =>{
   
     return(
-    <ul>
+        
+    <ul className='history'>
 
-        <li>cold drinks</li>
-        <li>plastic bottles</li>
-        <li>loan <span> $123</span></li>
-    </ul>
+      <div className='transaction-heading'> 
+        <h4>Transactions</h4> <small>viewAll</small>
+        </div>
+        <li><button>X</button>cold drinks
+         <div style={{textAlign: 'center'}}>
+        <strong style={{display: 'block' }}>
+           $ 123
+        </strong>
+           <small>
+              today
+          </small>
+        
+        </div>
+        </li>
+
+
+   </ul>
     )
-  
-
 }
 
 export default TransactionHistory;

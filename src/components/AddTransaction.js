@@ -6,15 +6,17 @@ import React from "react";
         <form >
             
         <div className="form-control">
-
-            <input type='text'  placeholder="Transaction Descrtiption"/>
+            <label htmlFor='amount'> Amount</label>
+            <input  type='text' id='amount' placeholder="Transaction Amount"/>
             </div>
             <div className="form-control">
-            <input type='text'  placeholder="Transaction Descrtiption"/>
+            <label htmlFor='title'>Title</label>
+            <input type='text' id='title' placeholder="Transaction Title"/>
 
          </div>
-
+         <button>Transaction</button>
         </form>
+        
     </div>
     )
 }
