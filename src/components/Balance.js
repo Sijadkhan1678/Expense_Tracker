@@ -8,7 +8,7 @@ import AccountSummary from './AccountSummary';
     <div className='Balance-container'>  
      <div className='balance'>
         <h3>Balance</h3>
-        <h1>$ 123</h1>
+        <h1>$123</h1>
        
    </div>
    

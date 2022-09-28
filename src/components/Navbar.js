@@ -1,13 +1,17 @@
 import React from "react";
-import home from '../assets/home.png'
-import plus from '../assets/plus.png'
-const Navbar = () =>{
+import home from '../assets/home.png';
+import plus from '../assets/add.svg';
+
+const Navbar = ({showForm}) =>{
+  
     return(
       <nav>
-        <ul className="nav showform">
-          <li><img src={home} alt='home'/></li>
-          <li><img src={plus} alt='plus'/></li>
-          {/* <li><img src={home}/></li> */}
+        <ul  className="nav showform">
+          <li><img onClick={()=>showForm(true)} src={home} alt='home'/></li>
+
+          <li onClick={() =>showForm(false)} id="plus"><img src={plus} alt='plus'/></li>
+
+          <li><img onClick={()=> showForm(true)} src={home}/></li>
           
           
         </ul>
