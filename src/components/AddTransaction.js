@@ -4,14 +4,15 @@ import React,{useState} from "react";
 
     const [transaction,setTransaction] = useState({
         amount: '',
-        title: ''
+        title: '',
+        catagory: 'select Catagory'
     })
     console.log('transaction',transaction)
     const handleChange = (e) =>{
         setTransaction({...transaction,[e.target.name]: e.target.value})
    
     }
-    const {amount,title} = transaction
+    const {amount,title,catagory} = transaction
     const onSubmit = (e) =>{
       e.preventDefault();
       if(amount === null || title === null){
@@ -36,6 +37,24 @@ import React,{useState} from "react";
             <label htmlFor='title'>Title</label>
             <input type='text' id='title' onClick={handleChange} placeholder="Transaction Title"/>
 
+         </div>
+        
+         <div className="form-control">
+
+         <select name="catagory"  onChange={handleChange} >
+
+            <option value=''>      Select Catagory </option>
+            <option value='facebook'> Facebook </option>
+            <option value='seo'>      Seo      </option>
+            <option value='income'>   Income   </option>
+            <option value='expense'>  Expense  </option>
+            <option value='earn'>     Earning  </option>
+            <option value='food'>     Food     </option>
+            <option value='book'>     Book     </option>
+            <option value='cake'>     Cake      </option>
+            <option value='watch'>    Watch     </option>
+
+         </select>
          </div>
          <button>Transaction</button>
         </form>

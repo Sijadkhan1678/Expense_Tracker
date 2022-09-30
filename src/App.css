@@ -213,6 +213,21 @@ body{
   margin-bottom: 0.54rem;
   color: white;
 }
+.form-control select{
+  margin: 0 auto;
+  margin-top: 0.7rem;
+  border-radius: 0.4rem;
+  width: 44%;
+  background-color: #fff;
+  font-size: 1rem;
+  /* text-align: center; */
+  padding: 0.6rem;
+}
+.form-control select option{
+  padding: 0.8rem;
+  font-size: 1.1em;
+  margin-top: 1.4rem;
+}
   .form.showform{
   visibility: visible;
   opacity: 1;
