@@ -15,8 +15,8 @@ const Catatgory = [
                       {id:3,type: "facebook",  image: facebook },
                       {id:4,type: "food"    ,  image: food     },
                       {id:5,type: "income"  ,  image: income   },
-                      {id:6,type: "watch "  ,  image: watch    },
-                      {id:7,type: "earn "   ,  image: earn     },
+                      {id:6,type: "watch"  ,   image: watch    },
+                      {id:7,type: "earn"   ,   image: earn     },
                       {id:8,type: "cake"    ,  image: cake     },
                       {id:9,type: "book"    ,  image: book     }
                  ]

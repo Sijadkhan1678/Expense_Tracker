@@ -8,27 +8,7 @@ import Navbar from './components/Navbar';
 import AppState from './context/AppState';
 
  const App = () => {
-
-  const [form, setForm] = useState(false);
- 
-       
-   const showForm =  close => {
-    console.log(close)
-     
-    if(close){
-    setForm(false)
-     // console.log('if form true',form)
-    }
-     else{
-       setForm(true)
-     // console.log('if form false',form)
-     }   
-   }
-   {
-     
-     
-
-   }
+   
   return (
     <AppState>
     <div>
@@ -36,8 +16,8 @@ import AppState from './context/AppState';
       <Header />
       <Balance /> 
       <TransactionHistory />
-      <AddTransaction  form={form}/>
-      <Navbar showForm={showForm}/>
+      <AddTransaction />
+      <Navbar />
     </div>
     </div>
     </AppState>

@@ -1,56 +1,23 @@
-    import React from 'react';
-    import food from '../assets/food.svg'
+  import React,{useContext} from 'react'; 
+  import appContext from '../context/AppContext'
+  import TransactionsItem from './TransactionItem';
+ 
 
- const TransactionHistory = () =>{
+    const TransactionHistory = () =>{
   
-    return(
+     const {transactions} = useContext(appContext)
+
+      //  if(!transactions) return <p>there are no transactin</p>
+     return(
      <div>  
     <ul className='history'>
 
       <div className='transaction-heading'> 
         <h5>Transactions</h5> <small>view all</small>
      </div>  
-        <li>
-           <button>X</button>
-           <img style={{width:40,padding:0,marginRight:'5px'}} src={food} />
-          cold drink
-         <div style={{textAlign: 'center',marginLeft:'9rem'}}>
-        <small style={{display: 'block' }}>
-           $ 123
-        </small>
-           <small>
-              today
-        </small>
-   </div>
-   </li>
-   <li>
-           <button>X</button>
-           <img style={{width:40,padding:0,marginRight:'5px'}} src={food} />
-          cold drink
-         <div style={{textAlign: 'center',marginLeft:'9rem'}}>
-        <small style={{display: 'block' }}>
-           $ 123
-        </small>
-           <small>
-              today
-        </small>
-   </div>
-   </li>
-   <li>
-           <button>X</button>
-           <img style={{width:40,padding:0,marginRight:'5px'}} src={food} />
-          cold drink
-         <div style={{textAlign: 'center',marginLeft:'9rem'}}>
-        <small style={{display: 'block' }}>
-           $ 123
-        </small>x
-           <small>
-              today
-        </small>
-   </div>
-   </li>
-       
-        
+      {
+       transactions &&  transactions.map((transaction) => <TransactionsItem key={transaction.id} transaction={transaction} />)
+      }     
 
    </ul>
    </div> 

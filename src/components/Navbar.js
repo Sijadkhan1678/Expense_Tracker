@@ -1,8 +1,11 @@
-import React from "react";
+import React,{useContext} from "react";
 import home from '../assets/home.png';
 import plus from '../assets/add.svg';
+import appContext from "../context/AppContext";
 
-const Navbar = ({showForm}) =>{
+const Navbar = () =>{
+  const {showForm,form} = useContext(appContext)
+  console.log('form value', form)
   
     return(
       <nav>
